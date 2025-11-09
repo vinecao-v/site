@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="assets/images/cyberpunk-bg.gif" class="bg-gif" alt="Fundo Cyberpunk">
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="form.html">Cadastro</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <div class="hero">
+            <h1>CADASTRO CORPORATIVO</h1>
+            <p>Preencha seus dados</p>
+        </div>
+
+        <div class="section">
+            <h2>Formulário de Identificação</h2>
+            <p style="text-align: center; margin-bottom: 30px;">
+                Todos os campos são obrigatórios para verificação de segurança
+            </p>
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Ex: Johnny" required>
+                    <span class="error-message" id="nomeError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" id="sobrenome" name="sobrenome" placeholder="Ex: Silverhand" required>
+                    <span class="error-message" id="sobrenomeError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Corporativo:</label>
+                    <input type="email" id="email" name="email" placeholder="seu.email@corporacao.com" required>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" name="idade" placeholder="Ex: 25" min="1" max="119" required>
+                    <span class="error-message" id="idadeError"></span>
+                </div>
+                
+                <button type="submit">CONFIRMAR CADASTRO</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Vinícius de Morais Furriel. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
