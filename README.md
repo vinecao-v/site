@@ -1,1 +1,1 @@
-https://vinecao-v.github.io/site/form.html
+https://vinecao-v.github.io/site/index.html
